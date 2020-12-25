@@ -1,0 +1,36 @@
+{
+  "name": "@reflect-ui/react",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/types/index.d.ts",
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "build": "yarn run build:lib && yarn run build:types",
+    "build:lib": "yarn rollup -c",
+    "build:types": "tsc --emitDeclarationOnly",
+    "install-peers": "install-peers -f"
+  },
+  "peerDependencies": {
+    "@emotion/core": "^11.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@svgr/rollup": "^5.5.0",
+    "@types/node": "^14.14.16",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "babel-preset-react-app": "^10.0.0",
+    "install-peers-cli": "^2.2.0",
+    "rollup": "^2.35.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-url": "^3.0.1",
+    "typescript": "~4.1.3"
+  }
+}
