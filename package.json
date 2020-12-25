@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "license": "MIT",
   "main": "lib/index.js",
-  "type": "module",
   "types": "lib/types/index.d.ts",
   "files": [
     "lib/"
