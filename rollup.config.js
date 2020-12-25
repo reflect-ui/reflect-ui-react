@@ -37,7 +37,7 @@ export default [
     ],
     output: {
       file: packageJSON.main,
-      format: 'es',
+      format: 'commonjs',
     },
     input,
   },
