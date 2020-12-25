@@ -1,6 +1,8 @@
 # reflect-ui-react
 [Reflect](http://reflect.bridged.xyz/) UI components for [React](https://github.com/facebook/react)
 
+<img alt="Reflect Cover" src="./docs/reflect-cover.png" width="50%">
+
 ## Components
 
 ### Button
