@@ -1,1 +1,1 @@
-export default () => console.log('Hello, Reflect!');
+export { Button } from './objects';
