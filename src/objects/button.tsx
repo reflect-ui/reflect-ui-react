@@ -53,6 +53,7 @@ const Button: React.FC<IButton> = ({
           font-size: 24px;
           line-height: 1.5;
           border-radius: ${radius}px;
+          cursor: pointer;
         `,
         buttonVariantStyles[variant]
       )}
