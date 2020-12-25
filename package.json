@@ -8,6 +8,7 @@
     "lib/"
   ],
   "scripts": {
+    "postinstall": "yarn build",
     "build": "yarn run build:lib && yarn run build:types",
     "build:lib": "yarn rollup -c",
     "build:types": "tsc --emitDeclarationOnly",
