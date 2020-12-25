@@ -8,6 +8,9 @@
 ```tsx
 import { Button } from '@reflect-ui/react';
 
+import Button, { ButtonVariants } from '@reflect-ui/react/objects/button'
+// You can import detailed typings/enums from object files
+
 <Button size="medium" />
 // Available sizes are `small(s, sm)`, `medium(m, md)`, `large(l, lg)`
 // Default is `medium`
@@ -18,6 +21,9 @@ import { Button } from '@reflect-ui/react';
 <Button variant="outline" />
 // Available variants are `filled`, `outline`, `ghost`
 // Default is of course, `filled`
+
+<Button variant={ButtonVariants.outline} />
+// You can pass variant value from enum `ButtonVariants` for safety
 ```
 
 For detailed information about the details and the system, please visit [Reflect System/Button](#).
