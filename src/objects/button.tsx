@@ -14,7 +14,7 @@ export enum ButtonVariants {
 
 export type TButtonVariant = keyof typeof ButtonVariants;
 
-export interface IButton {
+export interface IButton extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   size?: TSize;
   variant?: TButtonVariant;
   radius?: number;
@@ -42,7 +42,7 @@ const Button: React.FC<IButton> = ({
   size = 'medium',
   variant = 'filled',
   radius = 8,
-  children,
+  ...buttonProps
 }) => {
   return (
     <button
@@ -57,9 +57,8 @@ const Button: React.FC<IButton> = ({
         `,
         buttonVariantStyles[variant]
       )}
-    >
-      {children}
-    </button>
+      {...buttonProps}
+    />
   );
 };
 
