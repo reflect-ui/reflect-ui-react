@@ -1,5 +1,5 @@
 {
-  "name": "@reflect-ui/react",
+  "name": "@reflect-ui/react-core",
   "version": "0.0.1",
   "license": "MIT",
   "main": "lib/index.js",
