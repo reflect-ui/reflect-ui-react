@@ -4,7 +4,7 @@ import { css, cx } from '@emotion/css';
 // region no export
 import { TextManifest } from '@reflect-ui/core/lib/text';
 import { TextOverflow, TypographyProps } from './types';
-import { TextThemeDefaultVariants } from '@reflect-ui/core/lib/text-theme/templates/text-theme.default';
+import { TextThemeDefaultVariants } from '@reflect-ui/core/lib/extensions/text-theme/templates/text-theme.default';
 
 // todo make typography defaullt values based on reflect defaults
 const typographyDefaultVariantStyles: {
@@ -34,6 +34,10 @@ const Typography: React.FC<TypographyProps> = ({
     <span
       className={cx(
         css`
+          margin: 0;
+          overflow: 'hidden';
+          text-align: 'start';
+          font-size: '14px';
           /* todo -- add typography styling */
         `,
         typographyDefaultVariantStyles[variant]

@@ -1,7 +1,7 @@
 import { TextAlign__Api } from '@reflect-ui/core/lib/text-align';
 import { TextOverflow } from '@reflect-ui/core/lib/text-overflow';
 import { TextStyle } from '@reflect-ui/core/lib/text-style';
-import { TextThemeDefaultVariants__Api } from '@reflect-ui/core/lib/text-theme/templates/text-theme.default';
+import { TextThemeDefaultVariants__Api } from '@reflect-ui/core/lib/extensions/text-theme/templates/text-theme.default';
 export { TextAlign__Api as TextAlign, TextOverflow, TextStyle };
 
 /**
