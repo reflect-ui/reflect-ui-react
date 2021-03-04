@@ -7,7 +7,7 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "target": "esnext",
-    "module": "commonjs",
+    "module": "ES2015",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "jsx": "react",
