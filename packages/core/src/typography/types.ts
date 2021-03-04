@@ -15,5 +15,5 @@ export interface TypographyProps {
   overflow?: TextOverflow;
   //   color:
   textStyle?: TextStyle;
-  display?;
+  // display?;
 }

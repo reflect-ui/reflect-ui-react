@@ -4,11 +4,11 @@ import { css, cx } from '@emotion/css';
 // region no export
 import { TextManifest } from '@reflect-ui/core/lib/text';
 import { TextOverflow, TypographyProps } from './types';
-import { TextThemeDefaultVariants } from '@reflect-ui/core/lib/extensions/text-theme/templates/text-theme.default';
+import { TextThemeDefaultVariants, TextThemeDefaultVariants__Api } from '@reflect-ui/core/lib/extensions/text-theme/templates/text-theme.default';
 
 // todo make typography defaullt values based on reflect defaults
 const typographyDefaultVariantStyles: {
-  [key in TextThemeDefaultVariants]: string;
+  [key in TextThemeDefaultVariants__Api]: string;
 } = {
   [TextThemeDefaultVariants.heading1]: css``,
   [TextThemeDefaultVariants.heading2]: css``,
@@ -22,6 +22,7 @@ const typographyDefaultVariantStyles: {
   [TextThemeDefaultVariants.caption]: css``,
   [TextThemeDefaultVariants.button1]: css``,
   [TextThemeDefaultVariants.button2]: css``,
+  inherit: css``
 };
 
 const Typography: React.FC<TypographyProps> = ({
@@ -46,3 +47,5 @@ const Typography: React.FC<TypographyProps> = ({
     />
   );
 };
+
+export default Typography;
