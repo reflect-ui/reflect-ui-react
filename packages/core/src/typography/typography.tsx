@@ -10,15 +10,48 @@ import { TextThemeDefaultVariants, TextThemeDefaultVariants__Api } from '@reflec
 const typographyDefaultVariantStyles: {
   [key in TextThemeDefaultVariants__Api]: string;
 } = {
-  [TextThemeDefaultVariants.heading1]: css``,
-  [TextThemeDefaultVariants.heading2]: css``,
+  [TextThemeDefaultVariants.heading1]: css`
+    font-size: 80px;
+    font-weight: bold;
+
+    @media (max-width : 321px) {
+      font-size: 48px;
+    }
+  `,
+  [TextThemeDefaultVariants.heading2]: css`
+    font-size: 64px;
+    font-weight: bold;
+
+    @media (max-width : 321px) {
+      font-size: 32px;
+    }
+  `,
   [TextThemeDefaultVariants.heading3]: css``,
-  [TextThemeDefaultVariants.heading4]: css``,
+  [TextThemeDefaultVariants.heading4]: css`
+    font-size: 36px;
+    font-weight: bold;
+
+    @media (max-width : 321px) {
+      font-size: 32px;
+    }
+  `,
   [TextThemeDefaultVariants.heading5]: css``,
   [TextThemeDefaultVariants.heading6]: css``,
-  [TextThemeDefaultVariants.body1]: css``,
+  [TextThemeDefaultVariants.body1]: css`
+    font-size: 24px;
+
+    @media (max-width : 321px) {
+      font-size: 18px;
+    }
+  `,
   [TextThemeDefaultVariants.body2]: css``,
-  [TextThemeDefaultVariants.subtitle]: css``,
+  [TextThemeDefaultVariants.subtitle]: css`
+    font-size: 24px;
+
+    @media (max-width : 321px) {
+      font-size: 20px;
+    }
+  `,
   [TextThemeDefaultVariants.caption]: css``,
   [TextThemeDefaultVariants.button1]: css``,
   [TextThemeDefaultVariants.button2]: css``,
