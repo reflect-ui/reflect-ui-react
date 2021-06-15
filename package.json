@@ -2,6 +2,7 @@
     "name": "@reflect-ui/react",
     "private": true,
     "workspaces": [
-        "packages/*"
+        "packages/*",
+        "packages/reflect-core/packages/*"
     ]
 }
