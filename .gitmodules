@@ -1,3 +1,0 @@
-[submodule "packages/reflect-core"]
-	path = packages/reflect-core
-	url = https://github.com/bridgedxyz/reflect-core-ts
